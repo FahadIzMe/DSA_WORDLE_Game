@@ -2,6 +2,9 @@
 - This is the open ended DSA project from my 3rd semester. For this project, I wanted to make something new while also improving upon the OOP Monster Game that I coded the previous semester.
 - Improves the modular design and optimizes a few things while simulating the WORDLE game in C++. This is also a Menu based Terminal Game.
 
+# Tools
+- C++
+
 # Features
 
 - Arrow key and Enter key based terminal game. **No mouse use is involved.**
