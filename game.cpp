@@ -140,10 +140,6 @@ public:
 		bool win = false;												//Win status
 		for (unsigned short counter = 0; counter < 6; counter++)		//Give the user 6 tries
 		{
-			if (win = winCheck(colorArray[counter]))					//exit condition for winning
-			{
-				break;
-			}
 			printTitle();								//Start interfacing
 			for (unsigned short counter1 = 0; counter1 <= counter; counter1++)		//Print all the tries that have been made till now
 			{
@@ -153,6 +149,11 @@ public:
 			firstErrorHandle(hConsole, temp, colorArray, counter);		//Error handle the input
 			checkPresence(temp[counter + 1], colorArray[counter + 1]);	//Check if the current input is correct or not
 			count++;
+			if (win = winCheck(colorArray[counter + 1]))
+    		{
+				system("CLS");
+        		break;
+    		}
 			system("CLS");												//Clean for next input
 		}
 		printTitle();								//Printing all the tries the user made in the whole game
